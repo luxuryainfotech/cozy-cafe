@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cozy Cafe — Cadillac, MI</title>
+  <meta name="description"
+    content="A cozy spot for coffee, food, and chill vibes in Cadillac, Michigan. Freshly baked pastries, warm coffee, and casual savory bites." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Favicon (use your own domain) -->
+  <link rel="icon" type="image/jpg" href="images/logo-img.jpg">
+  <meta name="title" content="Cozy Cafe — Best Coffee & Pastries in Cadillac, MI">
+  <meta name="description"
+    content="Visit Cozy Cafe in Cadillac, Michigan for freshly baked pastries, warm coffee, and a cozy atmosphere. Your perfect local spot for study and chill vibes.">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.cozycafe.com/">
+  <meta property="og:title" content="Cozy Cafe — Best Coffee & Pastries in Cadillac, MI">
+  <meta property="og:description" content="Freshly baked pastries and warm coffee in the heart of Cadillac.">
+  <meta property="og:image" content="images/logo-img.jpg">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">
+        <img src="images/logo-img.jpg" alt="Cozy Cafe Logo" class="brand-logo">
+        <span>Cozy Cafe</span>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#favorites">Favorites</a>
+        <a href="#about">About</a>
+        <a href="#menu">Menu</a>
+        <a href="#ambiance">Ambiance</a>
+        <a href="#contact">Contact</a>
+        <a href="#visit">Visit</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <svg class="icon-menu" viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="4" y1="6" x2="20" y2="6" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <line x1="4" y1="12" x2="20" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <line x1="4" y1="18" x2="20" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+        <svg class="icon-close" viewBox="0 0 24 24" aria-hidden="true">
+          <line x1="6" y1="6" x2="18" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+          <line x1="18" y1="6" x2="6" y2="18" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header id="top" class="hero">
+    <img src="images/hero.jpg" alt="Warm cozy cafe interior" class="hero-bg" />
+    <div class="hero-overlay"></div>
+    <div class="container hero-content reveal">
+      <p class="eyebrow">Welcome to Cadillac</p>
+      <h1 class="hero-title">A Cozy Spot For <br /><em>Coffee, Food,</em> And <em>Chill Vibes.</em></h1>
+      <p class="hero-sub">Serving Freshly Baked Pastries, Warm Coffee, And Casual Savory Bites. Your Neighborhood Living
+        Room.</p>
+      <div class="hero-cta">
+        <a href="#menu" class="btn btn-primary">View Our Menu</a>
+        <a href="#visit" class="btn btn-ghost">Visit Us</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Popular Picks -->
+  <section id="favorites" class="section section-cream">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Crowd Favorites</h2>
+        <span class="divider divider-sage"></span>
+        <p>The Bites Our Neighbors Come Back For, Day After Day.</p>
+      </div>
+      <div class="card-grid">
+        <article class="pick-card reveal">
+          <div class="pick-img"><img src="images/cinnamon-roll.jpg" alt="Cinnamon Roll" /><span
+              class="price-tag">$3.00</span></div>
+          <div class="pick-body">
+            <h3>Cinnamon Roll</h3>
+            <p>Soft, Warm, and Dripping With Sweet Vanilla Bean Icing.</p>
+          </div>
+        </article>
+        <article class="pick-card reveal">
+          <div class="pick-img"><img src="images/butter-croissant.jpg" alt="Butter Croissant" /><span
+              class="price-tag">$2.00</span></div>
+          <div class="pick-body">
+            <h3>Butter Croissant</h3>
+            <p>Perfectly Flaky Layers, Baked To A Deep Golden Crisp Daily.</p>
+          </div>
+        </article>
+        <article class="pick-card reveal">
+          <div class="pick-img"><img src="images/club-sandwich.jpg" alt="Club Sandwich" /><span
+              class="price-tag">$8.50</span></div>
+          <div class="pick-body">
+            <h3>Club Sandwich</h3>
+            <p>Stacked High With Roasted Turkey, Crisp Bacon, And Fresh Greens.</p>
+          </div>
+        </article>
+        <article class="pick-card reveal">
+          <div class="pick-img"><img src="images/beef-burger.jpg" alt="Beef Burger" /><span
+              class="price-tag">$9.00</span></div>
+          <div class="pick-body">
+            <h3>Beef Burger</h3>
+            <p>Juicy, Savory, and Layered With Melting Cheese On A Toasted Bun.</p>
+          </div>
+        </article>
+        <article class="pick-card reveal">
+          <div class="pick-img"><img src="images/pancake-stack.jpg" alt="Pancake Stack" /><span
+              class="price-tag">$6.50</span></div>
+          <div class="pick-body">
+            <h3>Pancake Stack</h3>
+            <p>Fluffy Buttermilk Hotcakes Served With Pure Maple Syrup and Butter.</p>
+          </div>
+        </article>
+        <article class="pick-card reveal">
+          <div class="pick-img"><img src="images/blueberry-muffin.jpg" alt="Blueberry Muffin" /><span
+              class="price-tag">$3.25</span></div>
+          <div class="pick-body">
+            <h3>Blueberry Muffin</h3>
+            <p>Bursting With Sweet Berries and Finished With A Buttery Streusel Top.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="container two-col">
+      <div class="reveal">
+        <div class="img-frame img-frame-rotL">
+          <img src="images/about.jpg" alt="Barista pouring coffee" />
+        </div>
+      </div>
+      <div class="reveal">
+        <h2>Our Story</h2>
+        <span style="margin-left: 10px;" class="divider divider-accent"></span>
+        <p class="lead">Nestled In The Heart Of Cadillac, Michigan, Cozy Cafe Was Born Out Of A Simple Desire: To Create
+          A Space That Feels Like Home. A Place Where The Coffee Is Always Hot, The Pastries Are Fresh From The Oven,
+          And You're Always Greeted With A Smile.</p>
+        <p class="lead">Whether You're A Student Looking For A Quiet Corner To Study, A Remote Worker Needing A Change
+          Of Scenery, Or A Local Catching Up With Friends, We've Saved A Seat For You. Grab A Cup, Get Comfortable, And
+          Stay A While.</p>
+        <p class="lead">At Cozy Cafe, We Believe Every Visit Should Be More Than Just A Coffee Stop—It Should Be An
+          Experience Filled With Warmth, Comfort, And Connection. From Handcrafted Beverages Made With Care To Delicious
+          Treats That Brighten Your Day, Every Detail Is Designed To Make You Feel Welcome.</p>
+        <p class="lead">Our Cozy Atmosphere Blends Small-Town Charm With Modern Comfort, Making It The Perfect Spot To
+          Relax, Recharge, And Create Meaningful Moments. No Matter Where You’re Coming From, Cozy Cafe Is Your Home
+          Away From Home.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Believe -->
+  <section class="section section-cream">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>What We Believe</h2>
+        <span class="divider divider-sage"></span>
+      </div>
+      <div class="values-grid">
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24">
+              <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                d="M11 20A7 7 0 0 1 4 13c0-3.866 3.134-7 7-7 3.866 0 7 3.134 7 7 0 3.866-3.134 7-7 7zM11 13c0-4 1-9 9-11" />
+            </svg>
+          </div>
+          <div>
+            <h3>Honest Ingredients</h3>
+            <p>Everything From Scratch, Baked Fresh Every Morning With Nothing To Hide.</p>
+          </div>
+        </div>
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+              <polyline points="12,6 12,12 16,14" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <div>
+            <h3>Unhurried Mornings</h3>
+            <p>Take Your Time. Our Space Is Made For Slow Sipping and Long Conversations.</p>
+          </div>
+        </div>
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24">
+              <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <div>
+            <h3>Room for Everyone</h3>
+            <p>Whether You're Studying, Working, Or Catching Up — We've Saved You A Seat.</p>
+          </div>
+        </div>
+        <div class="value-card reveal">
+          <div class="value-icon">
+            <svg viewBox="0 0 24 24">
+              <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+            </svg>
+          </div>
+          <div>
+            <h3>Poured with Care</h3>
+            <p>Every Cup is Crafted With Precision, Attention, and a Genuine Smile.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>Our Menu</h2>
+        <span class="divider divider-accent"></span>
+        <p>Simple, Satisfying, and Made With Love.</p>
+      </div>
+      <div class="menu-grid">
+        <div class="menu-col reveal">
+          <div class="menu-banner">
+            <img src="images/pastries.jpg" alt="Fresh baked pastries" />
+            <h3>Pastries & Breakfast</h3>
+          </div>
+          <ul class="menu-list">
+            <li><span>Butter Croissant</span><span class="dots"></span><span class="price">$200.00</span></li>
+            <li><span>Chocolate Croissant</span><span class="dots"></span><span class="price">$500.00</span></li>
+            <li><span>Cinnamon Roll</span><span class="dots"></span><span class="price">$300.00</span></li>
+            <li><span>Banana Bread Slice</span><span class="dots"></span><span class="price">$1,000.00</span></li>
+            <li><span>Blueberry Muffin</span><span class="dots"></span><span class="price">$1,200.00</span></li>
+            <li><span>Cheese Danish</span><span class="dots"></span><span class="price">$1,400.00</span></li>
+            <li><span>Toast &amp; Jam</span><span class="dots"></span><span class="price">$900.00</span></li>
+            <li><span>Pancake Stack</span><span class="dots"></span><span class="price">$800.00</span></li>
+          </ul>
+        </div>
+        <div class="menu-col reveal">
+          <div class="menu-banner">
+            <img src="images/savory.jpg" alt="Savory sandwiches" />
+            <h3>Sandwiches & Savory</h3>
+          </div>
+          <ul class="menu-list">
+            <li><span>Club Sandwich</span><span class="dots"></span><span class="price">$500.00</span></li>
+            <li><span>Chicken Sandwich</span><span class="dots"></span><span class="price">$200.00</span></li>
+            <li><span>Veggie Sandwich</span><span class="dots"></span><span class="price">$100.00</span></li>
+            <li><span>Beef Burger</span><span class="dots"></span><span class="price">$500.00</span></li>
+            <li><span>Chicken Burger</span><span class="dots"></span><span class="price">$800.00</span></li>
+            <li><span>French Fries</span><span class="dots"></span><span class="price">$500.00</span></li>
+            <li><span>Meat Pie</span><span class="dots"></span><span class="price">$800.00</span></li>
+            <li><span>Sausage Roll</span><span class="dots"></span><span class="price">$700.00</span></li>
+            <li><span>Spring Rolls</span><span class="dots"></span><span class="price">$200.00</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ambiance -->
+  <section id="ambiance" class="section section-cream">
+    <div class="container two-col">
+      <div class="reveal order-2">
+        <h2>Your Second Living Room</h2>
+        <span style="margin-left: 10px;" class="divider divider-accent"></span>
+        <p class="lead">We Designed Cozy Cafe To Be Your Sanctuary. Whether You Need To Focus On Work, Dive Into A Good
+          Book, Or Just Watch The World Go By.</p>
+        <ul class="feature-list">
+          <li>
+            <span class="feature-icon feature-icon-sage">
+              <svg viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  d="M5 12.55a11 11 0 0 1 14.08 0M1.42 9a16 16 0 0 1 21.16 0M8.53 16.11a6 6 0 0 1 6.95 0M12 20h.01" />
+              </svg>
+            </span>
+            <div>
+              <h4>Fast, Free WiFi</h4>
+              <p>Reliable Connection So You Can Work Uninterrupted All Day.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-icon feature-icon-accent">
+              <svg viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  d="M19 9V6a3 3 0 0 0-3-3H8a3 3 0 0 0-3 3v3M5 9a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-4a2 2 0 0 0-2-2H5zM6 17v3M18 17v3" />
+              </svg>
+            </span>
+            <div>
+              <h4>Comfy Seating</h4>
+              <p>From Plush Leather Armchairs to Spacious Wooden Tables.</p>
+            </div>
+          </li>
+          <li>
+            <span class="feature-icon feature-icon-primary">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+                <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41" />
+              </svg>
+            </span>
+            <div>
+              <h4>Good Lighting</h4>
+              <p>Soft Amber Glow and Large Windows for Perfect Natural Light.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="reveal order-1">
+        <div class="img-frame img-frame-rotR img-frame-sage">
+          <img src="images/ambiance.jpg" alt="Cozy cafe ambiance seating" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="container two-col">
+      <div class="reveal">
+        <h2>Send Us a Note</h2>
+        <span style="margin-left: 5px;" class="divider divider-sage"></span>
+        <p class="lead">Have a Question About Our Menu, Event Hosting, or Just Want to Say Hi? We'd love to hear from
+          you.</p>
+
+        <form action="https://formsubmit.co/Gabrielmariroma8@gmail.com" method="POST" class="cozy-contact-form">
+
+          <!-- Your Email Receives Messages -->
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_subject" value="New Client Message From Website">
+
+          <!-- Optional Redirect After Submit -->
+          <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you.html">
+
+          <div class="input-row">
+            <div class="input-group">
+              <label for="name">Full Name</label>
+              <input type="text" id="name" name="name" placeholder="John Doe" required>
+            </div>
+
+            <div class="input-group">
+              <label for="email">Client Email Address</label>
+              <input type="email" id="email" name="email" placeholder="client@example.com" required>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Type your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="submit-button">
+            Send Message
+          </button>
+
+        </form>
+      </div>
+      <div class="reveal contact-side">
+        <div class="contact-img">
+          <img src="images/contact-decor.jpg" alt="Cafe atmosphere" />
+        </div>
+        <div class="contact-card">
+          <h3>Other ways to reach us</h3>
+          <a href="mailto:hello@cozycafe.com" class="contact-row">
+            <span class="contact-row-icon">
+              <svg viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" points="22,6 12,13 2,6" />
+              </svg>
+            </span>
+            <span>hello@cozycafe.com</span>
+          </a>
+          <a href="tel:+15551234567" class="contact-row">
+            <span class="contact-row-icon">
+              <svg viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+              </svg>
+            </span>
+            <span>+1(56)88289017</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit -->
+  <section id="visit" class="section section-dark">
+    <div class="container two-col">
+      <div class="reveal">
+        <h2 class="text-light">Come Say Hi</h2>
+        <span style="margin-left: 10px;" class="divider divider-accent"></span>
+        <p style="color:rgb(212, 211, 211);" class="lead text-soft">We're Located in The heart of Cadillac. Drop by For
+          Your Morning Brew or An Afternoon
+          pick-me-up.</p>
+        <div class="visit-info">
+          <div class="visit-block">
+            <span class="visit-icon">
+              <svg viewBox="0 0 24 24">
+                <path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                  d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                <circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2" />
+              </svg>
+            </span>
+            <div>
+              <h4>Location</h4>
+              <p>8834 E 34 Rd #131<br />Cadillac, MI 49601</p>
+              <a class="link-accent" href="https://maps.google.com/?q=8834+E+34+Rd+%23131,+Cadillac,+MI+49601"
+                target="_blank" rel="noreferrer">Get Directions →</a>
+            </div>
+          </div>
+          <div class="visit-block">
+            <span class="visit-icon">
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+                <polyline points="12,6 12,12 16,14" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <div>
+              <h4>Hours</h4>
+              <p class="hours"><span>Mon – Fri</span><span class="divider"> </span><span>7:00 Am – 7:00 Pm</span></p>
+              <p class="hours"><span>Sat – Sun</span><span class="divider"> </span><span>8:00 Am – 6:00 Pm</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="map-card">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2856.426053385972!2d-85.40357082396257!3d44.28062617107922!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x881f0f21410dc2e3%3A0xd13fce012115addd!2sThe%20UPS%20Store!5e0!3m2!1sen!2sin!4v1777486809550!5m2!1sen!2sin"
+            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="brand brand-light">
+        <a href="#top" class="brand">
+          <img src="images/logo-img.jpg" alt="Cozy Cafe Logo" class="brand-logo">
+          <span>Cozy Cafe</span>
+        </a>
+      </div>
+      <div class="socials">
+        <a href="https://www.questel.com/" target="_blank" aria-label="Questel" class="questel-link">
+          <img src="https://i.pinimg.com/736x/97/2c/71/972c71eb32d70e6ce7145ccfe2a2923e.jpg" alt="Questel Logo">
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year"></span> Cozy Cafe Cadillac. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Toast -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
