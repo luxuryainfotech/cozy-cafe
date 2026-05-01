@@ -1251,6 +1251,7 @@ h6 {
 }
 .brand-tagline {
   margin: 0 auto 20px;
+  margin-left: 60px;
 }
 .footer-nav {
   flex-direction: column;
