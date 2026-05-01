@@ -1250,8 +1250,7 @@ h6 {
   justify-content: center;
 }
 .brand-tagline {
-  margin: 0 auto 20px;
-  margin-left: 60px;
+  margin: 0 auto 20px; 
 }
 .footer-nav {
   flex-direction: column;
