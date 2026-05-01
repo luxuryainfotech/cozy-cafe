@@ -74,7 +74,7 @@ h6 {
     padding: 0 28px;
   }
 }
- 
+
 /* ============ NAVIGATION BAR ============ */
 .nav {
   position: fixed;
@@ -88,7 +88,7 @@ h6 {
     245,
     0.95
   ); /* Light cream with transparency */
-  backdrop-filter: blur(10px);  
+  backdrop-filter: blur(10px);
   z-index: 1000;
   border-bottom: 1px solid rgba(44, 36, 32, 0.1);
   display: flex;
@@ -112,7 +112,7 @@ h6 {
   align-items: center;
   gap: 12px;
   text-decoration: none;
-  color: #2c2420; 
+  color: #2c2420;
   font-weight: 700;
   font-size: 1.4rem;
   transition: transform 0.3s ease;
@@ -198,7 +198,7 @@ h6 {
 /* Tablets & Mobile (Under 992px) */
 @media (max-width: 992px) {
   .nav-toggle {
-    display: block;  
+    display: block;
   }
 
   .nav-links {
@@ -217,7 +217,7 @@ h6 {
   }
 
   .nav-links.open {
-    right: 0; 
+    right: 0;
   }
 
   .nav-links a {
@@ -228,11 +228,11 @@ h6 {
 /* Small Mobile (Under 480px) */
 @media (max-width: 480px) {
   .brand span {
-    font-size: 1.1rem; 
+    font-size: 1.1rem;
   }
 
   .nav-links {
-    width: 100%; 
+    width: 100%;
   }
 }
 
@@ -323,6 +323,7 @@ h6 {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   font-size: 1.1rem;
+  margin-top: 17px;
   margin-bottom: 18px;
 }
 .hero-title {
@@ -631,7 +632,7 @@ h6 {
 /* --- Menu Section Styling --- */
 #menu {
   padding: 80px 0;
-  background-color: #fffaf5;  
+  background-color: #fffaf5;
 }
 
 .container {
@@ -658,14 +659,14 @@ h6 {
   display: block;
   width: 60px;
   height: 3px;
-  background-color: #d4a373; 
+  background-color: #d4a373;
   margin: 0 auto 20px;
 }
 
 /* Grid Layout */
 .menu-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);  
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   align-items: start;
 }
@@ -722,7 +723,7 @@ h6 {
   margin-bottom: 20px;
   transition: 0.3s;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-  height: auto !important;  
+  height: auto !important;
 }
 
 .menu-item:hover {
@@ -772,7 +773,7 @@ h6 {
 /* (Tablets) */
 @media (max-width: 992px) {
   .menu-grid {
-    grid-template-columns: 1fr;  
+    grid-template-columns: 1fr;
   }
 }
 
@@ -783,7 +784,7 @@ h6 {
   }
 
   .menu-item {
-    flex-direction: column; 
+    flex-direction: column;
     text-align: center;
   }
 
@@ -1095,9 +1096,9 @@ h6 {
   }
 }
 
-/* ============ FOOTER ============ */ 
+/* ============ FOOTER ============ */
 .footer {
-  background-color: #2c2420;  
+  background-color: #2c2420;
   color: #f4f1ea;
   padding: 60px 0 20px;
   font-family: "Poppins", sans-serif;
@@ -1105,7 +1106,7 @@ h6 {
 
 .footer-inner {
   display: grid;
-  grid-template-columns: 1.5fr 2fr 1fr; 
+  grid-template-columns: 1.5fr 2fr 1fr;
   gap: 40px;
   align-items: start;
   margin-bottom: 40px;
@@ -1148,7 +1149,7 @@ h6 {
 
 .nav-group h4,
 .footer-social-section h4 {
-  color: #d4a373; 
+  color: #d4a373;
   font-size: 1.1rem;
   margin-bottom: 20px;
   text-transform: uppercase;
@@ -1204,40 +1205,163 @@ h6 {
   color: #8d8d8d;
 }
 
-/* --- Responsive Media Queries --- */
+/* ============ RESPONSIVE DESIGN (ALL DEVICES) ============ */
 
-/* Tablets */
-@media (max-width: 992px) {
-  .footer-inner {
-    grid-template-columns: 1fr 1fr; 
+/* --- Mobile First Base (0px to 600px) --- */
+.container {
+  padding: 0 20px;
+}
+.two-col {
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+.card-grid,
+.values-grid,
+.menu-grid {
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+.hero-cta {
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.menu-item {
+  flex-direction: column;
+  text-align: center;
+}
+.menu-header {
+  flex-direction: column;
+  gap: 5px;
+  border-bottom: none;
+}
+.menu-img {
+  width: 100%;
+  height: 150px;
+}
+.menu-banner {
+  height: 180px;
+}
+.footer-inner {
+  grid-template-columns: 1fr;
+  text-align: center;
+}
+.brand-link {
+  justify-content: center;
+}
+.brand-tagline {
+  margin: 0 auto 20px;
+}
+.footer-nav {
+  flex-direction: column;
+  gap: 30px;
+}
+.socials {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+.input-row {
+  flex-direction: column;
+}
+
+/* --- Small Tablets & Large Phones (600px+) --- */
+@media (min-width: 600px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .section-head h2 {
+    font-size: 2.2rem;
+  }
+  .container {
+    padding: 0 28px;
   }
 }
 
-/* Mobile Devices */
-@media (max-width: 600px) {
-  .footer-inner {
-    grid-template-columns: 1fr;  
-    text-align: center;
+/* --- Tablets (768px+) --- */
+@media (min-width: 768px) {
+  .section {
+    padding: 110px 0;
   }
-
-  .brand-link {
-    justify-content: center;
-  }
-
-  .brand-tagline {
-    margin: 0 auto 20px;
-  }
-
-  .footer-nav {
-    flex-direction: column;
+  .values-grid {
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
   }
-
-  .nav-group ul li a:hover {
-    padding-left: 0;
+  .value-card {
+    flex-direction: row;
+    align-items: flex-start;
+    text-align: left;
   }
+  .hero-cta {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .input-row {
+    flex-direction: row;
+  }
+}
 
-  .socials {
-    margin-left: 170px;
+/* --- Small Laptops / Large Tablets (992px+) --- */
+@media (min-width: 992px) {
+  .two-col {
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+  .menu-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+  .card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer-inner {
+    grid-template-columns: 1.5fr 2fr 1fr;
+    text-align: left;
+  }
+  .brand-link {
+    justify-content: flex-start;
+  }
+  .footer-nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .nav-toggle {
+    display: none;
+  } /* Hide menu button on desktop */
+  .nav-links {
+    position: static;
+    height: auto;
+    width: auto;
+    background: none;
+    flex-direction: row;
+    box-shadow: none;
+  }
+}
+
+/* --- Desktop & Wide Screens (1200px+) --- */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1450px;
+    margin: 0 auto;
+  }
+  .contact-img {
+    height: 320px;
+  }
+}
+
+/* --- Specific Fixes --- */
+@media (max-width: 991px) {
+  .nav-toggle {
+    display: block;
+  }
+  /* Navigation mobile menu behavior should be handled by your JS class '.open' */
+}
+
+@media (max-width: 480px) {
+  .brand span {
+    font-size: 1.1rem;
+  }
+  .hero-title {
+    font-size: 2.5rem;
   }
 }
